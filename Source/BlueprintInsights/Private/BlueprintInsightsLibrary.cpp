@@ -11,7 +11,7 @@ void UBlueprintInsightsLibrary::PushCPUEventScope(const FString& InName)
 		static uint32 EventId;                             
 		EventId = FCpuProfilerTrace::OutputEventType(*InName);
 	                                                   
-        FCpuProfilerTrace::OutputBeginEvent(EventId);      
+        	FCpuProfilerTrace::OutputBeginEvent(EventId);      
 	}
 }
 
