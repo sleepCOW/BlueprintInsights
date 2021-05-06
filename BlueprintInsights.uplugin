@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BlueprintInsights",
+	"Description": "Blueprint insights provide a way to use unreal insights within blueprints with a minimal overhead",
+	"Category": "Profiling",
+	"CreatedBy": "olexthelake@gmail.com",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BlueprintInsights",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
