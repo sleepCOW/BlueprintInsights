@@ -15,16 +15,16 @@ class BLUEPRINTINSIGHTS_API UBlueprintInsightsLibrary : public UBlueprintFunctio
 	GENERATED_BODY()
 
 	/*
-		* Pushing(Adding) cpu scope, recommended by Epic Games over SCOPED_NAMED_EVENT variant
-		* WARNING: Do not try to add scope before delay and end it afterwards
-		* WARNING: Each call must be paired with PopCPUEventScope
-		* otherwise you scope will be endless or will be ended by someone else
-		*/
+	* Pushing(Adding) cpu scope, recommended by Epic Games over SCOPED_NAMED_EVENT variant
+	* WARNING: Do not try to add scope before delay and end it afterwards
+	* WARNING: Each call must be paired with PopCPUEventScope
+	* otherwise you scope will be endless or will be ended by someone else
+	*/
 	UFUNCTION(BlueprintCallable, Category = "Profiling", meta = (Keywords = "TRACE_CPUPROFILER_EVENT_SCOPE"))
 	static void PushCPUEventScope(const FString& InName);
 
 	UFUNCTION(BlueprintCallable, Category = "Profiling", meta = (Keywords = "TRACE_CPUPROFILER_EVENT_SCOPE"))
-    static void PopCPUEventScope();
+    	static void PopCPUEventScope();
 
 	/*
 	 * Pushing(Adding) scope to the current profiler
@@ -34,7 +34,7 @@ class BLUEPRINTINSIGHTS_API UBlueprintInsightsLibrary : public UBlueprintFunctio
 	 * otherwise you scope will be endless or will be ended by someone else
 	 */
 	UFUNCTION(BlueprintCallable, Category = "Profiling", meta = (Keywords = "SCOPED_NAMED_EVENT"))
-    static void PushScopedNamedEvent(const FColor& Color, const FString& InName);
+    	static void PushScopedNamedEvent(const FColor& Color, const FString& InName);
 
 	UFUNCTION(BlueprintCallable, Category = "Profiling", meta = (Keywords = "SCOPED_NAMED_EVENT"))
 	static void PopScopedNamedEvent();
